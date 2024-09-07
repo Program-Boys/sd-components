@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "@system-devs/sd-components",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,10 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prebuild": "rm -rf dist node_modules",
+    "prebuildDev": "rm -rf dist"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +39,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/addon-themes": "^8.2.9",
+    "@storybook/preset-create-react-app": "^8.0.6",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-webpack5": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@types/storybook__react": "^5.2.1"
   }
 }

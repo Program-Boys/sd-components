@@ -1,7 +1,22 @@
 {
-  "name": "@system-devs/sd-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "system-devs-components",
+  "version": "1.0.2",
+  "author": "enriquebds",
+  "description": "Biblioteca de componentes para o System Devs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Program-Boys/sd-components"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

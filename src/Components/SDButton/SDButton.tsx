@@ -1,3 +1,4 @@
+import React from "react";
 import { SDButtonProps } from "./SDButton.type";
 
 export const SDButton = ({ text, ...props }: SDButtonProps) => {
